@@ -1,0 +1,296 @@
+html{
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body{
+color:white;
+}
+
+.bg-index{
+    background-color: rgb(12, 70, 92);
+    color: white;
+}
+
+nav {
+position: static;
+top: 0;
+left: 0;
+float: right;
+}
+
+nav :hover{
+    color: rgb(179, 179, 217);
+}
+
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 2rem;
+    margin-right: 70px;
+    
+}
+header{
+    background-color: white;
+    background: fixed;
+    
+   
+}
+
+/*header img{
+    width: 700px;
+   height: auto;
+
+}*/
+
+h1{
+    color: rgb(241, 239, 239);
+    font-size: 1.5rem;   
+}
+
+h2{
+   font-size: 2.5rem;
+}
+
+section p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.text-center{
+text-align: center;
+
+}
+
+.bg-gris{
+    background-color: rgb(12, 70, 92);
+    
+
+}
+
+.Section_box{
+    height: auto;
+    margin: 50px 100px;
+    padding: 30px 20px;
+}
+
+section div img{
+    width: 300px;
+    height: 400px;
+    margin: 2rem;
+    border: 2px solid black;
+}
+
+.container{
+    display: flex;
+    justify-content: center;    
+}
+
+/*Style MUJER*/
+
+.bg-mujer{
+    background-color:rgb(181, 109, 172);
+    color: black;
+}
+
+.nav-mujer{
+    background-color: rgb(181, 109, 172) ;
+}
+
+.nav-mujer :hover{
+    color: rgb(0, 0, 0);
+}
+
+
+
+.container img{
+    width: 400px;
+    height: 200px;
+}
+
+.ajuste img{
+    width: 300px; 
+    height: 500px;
+}
+
+.sectionm{
+    width: auto;
+    background-color: aliceblue;
+    flex-wrap: wrap;
+}
+
+
+/* HOMBRE*/
+
+.bg-hombre{
+    background-color: dimgray;
+
+}
+
+
+
+
+.grid{
+    display: grid;
+    width: 99%;
+    grid-template-columns:repeat(3,auto) ;
+    grid-template-rows:repeat(5,auto) ;
+    align-items: center;
+    grid-template-areas: "nav nav nav"
+    "video cabecera cabecera"
+    "s1 s1 s1"
+    "cont pie pie";  
+}
+
+.caja1{
+    grid-area: nav;
+}
+
+.caja2{
+    grid-area:cabecera;
+    background: fixed;
+    margin-right: 300px;
+    
+    
+}
+
+.caja3{
+    grid-area:s1;
+}
+
+.caja4{
+    grid-area: video;
+}
+
+.caja5{
+    grid-area:cont;
+    padding-top: 200px;
+    background: fixed;  
+    font-size: 2rem;
+    margin-left: 700px;
+    margin-bottom: 100px;
+}
+
+.caja6{
+    grid-area: pie;
+    font-size: 2rem;
+    
+    
+}
+
+.caja6 img{
+    width: 50px;
+    height: 50px;
+    
+}
+
+.tamaño-headerin img{
+ width: 1000px ;
+ height: 700px;
+ border-radius: 20px;
+}
+
+@media all and (max-width:768px){
+    .grid{
+        
+        grid-template-columns:1fr ;
+        grid-template-rows: auto ;
+        grid-template-areas:  
+        "nav"
+        "cabecera"
+        "video"
+        "s1"
+        "cont"
+        "pie"
+
+    }
+    
+}
+
+
+/* Seccion niños*/
+
+
+.bg-niños{
+background-color:rgb(202, 115, 43) ;
+}
+
+
+
+.gridn{
+    width: 99%;
+    display: grid;
+    margin: 5px;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(6,auto);
+    grid-template-areas: 
+    "nav nav nav"
+    "header header header"
+    "indu indu indu"
+    "acce acce acce"
+    "zapa zapa zapa"
+    "pie pie pie"
+
+}
+
+
+
+
+.caja1n{
+    grid-area:nav;
+    margin-inline-start: auto;
+
+}
+
+
+
+.caja2n{
+    grid-area:header;
+    background: fixed;
+    margin: 10px auto;
+
+}
+
+.caja3n{
+    grid-area:zapa;
+    display: inline-flex;
+
+
+}
+
+.caja4n{
+    grid-area:indu;
+    display: inline-flex;
+
+}
+
+.caja5n{
+    grid-area:acce;
+    display: inline-flex;
+}
+
+.caja6n{
+    grid-area:pie;
+}
+
+
+@media all and (max-width:768px){
+.gridn{
+      
+    grid-template-columns:1fr ;
+    grid-template-rows: auto ;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "acce"
+    "indu"
+    "zapa"
+    "pie"
+}
+}
